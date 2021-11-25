@@ -1,5 +1,5 @@
 export function getUniqueValuesOfObjects<
-  Obj extends Object,
+  Obj extends object,
   Key extends keyof Obj
 >(
   objects: Obj[],

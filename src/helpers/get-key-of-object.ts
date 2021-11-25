@@ -1,4 +1,4 @@
-export function getKeyOfObject<Obj extends Object, Key extends keyof Obj>(
+export function getKeyOfObject<Obj extends object, Key extends keyof Obj>(
   object: Obj,
   value: Obj[Key]
 ): Key | null {

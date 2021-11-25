@@ -1,4 +1,4 @@
-export function isKeyInObject<Obj extends Object>(
+export function isKeyInObject<Obj extends object>(
   key: unknown,
   object: Obj
 ): key is keyof Obj {
