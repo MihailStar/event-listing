@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-recess-order",
+    "stylelint-config-prettier"
+  ],
+  "overrides": [
+    {
+      "customSyntax": "postcss-html",
+      "files": ["**/*.html"]
+    }
+  ],
+  "rules": {
+    "color-hex-length": "long",
+    "declaration-property-value-disallowed-list": {
+      "/^border(?:-top|-right|-bottom|-left)?$/": ["none"],
+      "/^outline$/": ["none"]
+    },
+    "max-nesting-depth": 3,
+    "order/properties-alphabetical-order": null,
+    "scss/percent-placeholder-pattern": "^[a-z]+(?:[a-z0-9-_]+[a-z0-9]+)?$",
+    "selector-class-pattern": "^[a-z]+(?:[a-z0-9-_]+[a-z0-9]+)?$"
+  }
+}

@@ -1,0 +1,21 @@
+@use 'sass:list';
+
+$default-breakpoints: (0, 200px, 400px, 600px, 800px, 1000px, 1200px, 1440px);
+
+@mixin up($property, $min-value, $step, $breakpoints: $default-breakpoints) {
+  $index: 1;
+
+  @each $breakpoint in $breakpoints {
+    @media screen and (min-width: $breakpoint) {
+      #{$property}: ($min-value + $step * $index);
+    }
+
+    $index: ($index + 1);
+  }
+}
+
+@mixin down($property, $max-value, $step, $breakpoints: $default-breakpoints) {
+  $min-value: ($max-value - $step * list.length($breakpoints));
+
+  @include up($property, $min-value, $step, $breakpoints);
+}

@@ -1,0 +1,14 @@
+@use 'sass:math';
+
+@use '../../helpers/scale-value';
+
+.title {
+  $font-size: 48px;
+  @include scale-value.down(font-size, $font-size, 2.5px);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 900;
+  line-height: math.div(66px, $font-size);
+  color: #2e282c;
+  overflow-wrap: break-word;
+}

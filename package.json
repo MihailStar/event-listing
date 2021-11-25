@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@tsconfig/create-react-app": "^1.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "browserslist": "^4.17.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "gh-pages": "^3.2.0",
+    "htmlhint": "^0.15.0",
+    "postcss-html": "^1.0.0",
+    "prettier": "^2.4.0",
+    "react-scripts": "4.0.3",
+    "sass": "^1.43.0",
+    "stylelint": "^14.0.0",
+    "stylelint-config-prettier": "^9.0.0",
+    "stylelint-config-recess-order": "^2.5.0",
+    "stylelint-config-recommended-scss": "^5.0.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "typescript": "^4.4.0"
+  },
+  "engines": {
+    "node": "^14.15.0",
+    "npm": "^6.14.0"
+  },
+  "homepage": "https://mihailstar.github.io/event-listing",
+  "name": "event-listing",
+  "private": true,
+  "scripts": {
+    "build": "react-scripts build",
+    "deploy": "gh-pages --dist ./build --message deploy",
+    "dev": "react-scripts start",
+    "predeploy": "react-scripts build"
+  }
+}

@@ -1,0 +1,67 @@
+@use 'sass:math';
+
+@use '../../helpers/scale-value';
+
+.card {
+  position: relative;
+  min-height: 400px;
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px 0 rgba(#000000, 0.1);
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(#000000, 0.2);
+    border-radius: 6px;
+  }
+
+  &__title {
+    $font-size: 48px;
+    @include scale-value.down(right, 40px, 2.5px);
+    @include scale-value.down(bottom, 40px, 2.5px);
+    @include scale-value.down(left, 40px, 2.5px);
+    @include scale-value.down(font-size, $font-size, 3px);
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 900;
+    line-height: math.div(66px, $font-size);
+    color: #ffffff;
+    overflow-wrap: break-word;
+
+    @media screen and (min-width: 1440px) {
+      bottom: 42px;
+    }
+  }
+
+  &__date {
+    $font-size: 48px;
+    @include scale-value.down(top, 40px, 2.5px);
+    @include scale-value.down(left, 40px, 2.5px);
+    @include scale-value.down(width, 80px, 4px);
+    @include scale-value.down(height, 80px, 4px);
+    @include scale-value.down(font-size, $font-size, 3px);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    line-height: math.div(66px, $font-size);
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+  }
+
+  &__mark {
+    @include scale-value.down(top, 40px, 2.5px);
+    @include scale-value.down(right, 40px, 2.5px);
+    position: absolute;
+  }
+}

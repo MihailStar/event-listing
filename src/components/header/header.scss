@@ -1,0 +1,7 @@
+@use '../../helpers/scale-value';
+
+.header {
+  &__title {
+    @include scale-value.down(margin-bottom, 40px, 2px);
+  }
+}

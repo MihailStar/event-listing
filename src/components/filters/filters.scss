@@ -1,0 +1,28 @@
+@use '../../helpers/scale-value';
+
+.filters {
+  @include scale-value.down(row-gap, 30px, 2px);
+  display: flex;
+  flex-wrap: wrap;
+
+  &__filter {
+    width: 100%;
+
+    @media screen and (min-width: 800px) {
+      width: auto;
+    }
+
+    &:not(:last-child) {
+      @include scale-value.down(
+        margin-right,
+        30px,
+        1px,
+        (800px, 1000px, 1200px, 1440px)
+      );
+
+      // @media screen and (max-width: (750px - 1px)) {
+      //   margin-right: 0;
+      // }
+    }
+  }
+}

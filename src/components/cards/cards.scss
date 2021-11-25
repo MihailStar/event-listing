@@ -1,0 +1,28 @@
+@use 'sass:math';
+
+@use '../../helpers/scale-value';
+
+.cards {
+  @include scale-value.down(row-gap, 40px, 2px);
+  @include scale-value.down(column-gap, 40px, 2px);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+
+  @media screen and (min-width: 680px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__message {
+    $font-size: 24px;
+    @include scale-value.down(font-size, $font-size, 1px);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    line-height: math.div(34px, $font-size);
+    color: #2e282c;
+  }
+}
