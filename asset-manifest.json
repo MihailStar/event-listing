@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/event-listing/static/css/main.dffc6bd5.chunk.css",
+    "main.js": "/event-listing/static/js/main.f96ace3c.chunk.js",
+    "main.js.map": "/event-listing/static/js/main.f96ace3c.chunk.js.map",
+    "runtime-main.js": "/event-listing/static/js/runtime-main.41b47355.js",
+    "runtime-main.js.map": "/event-listing/static/js/runtime-main.41b47355.js.map",
+    "static/js/2.74fd01ff.chunk.js": "/event-listing/static/js/2.74fd01ff.chunk.js",
+    "static/js/2.74fd01ff.chunk.js.map": "/event-listing/static/js/2.74fd01ff.chunk.js.map",
+    "index.html": "/event-listing/index.html",
+    "static/css/main.dffc6bd5.chunk.css.map": "/event-listing/static/css/main.dffc6bd5.chunk.css.map",
+    "static/js/2.74fd01ff.chunk.js.LICENSE.txt": "/event-listing/static/js/2.74fd01ff.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/event-listing/static/media/avenir-roman.fa5a4060.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.41b47355.js",
+    "static/js/2.74fd01ff.chunk.js",
+    "static/css/main.dffc6bd5.chunk.css",
+    "static/js/main.f96ace3c.chunk.js"
+  ]
+}
